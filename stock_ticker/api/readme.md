@@ -4,6 +4,7 @@
 
 ### Player Class
 
++ playerId: Number. Required. Default: 0
 + username: String. Required
 + isBroker: Boolean. Default: false
 + tradeHistory: array of trades
