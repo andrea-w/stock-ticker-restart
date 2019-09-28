@@ -9,6 +9,10 @@ var tradeSchema = new mongoose.Schema({
         type: Number,
         required: true
     },
+    time: {
+        type: Date,
+        default: Date.now
+    },
     stockName: {
         type: String,
         required: true
