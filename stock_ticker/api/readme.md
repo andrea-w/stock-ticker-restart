@@ -26,13 +26,14 @@
 
 ### Trade Class
 
-+ username: String. Required. Identifies player involved in trade
++ tradeId: Number. Required
++ playerId: Number. Required. Identifies player involved in trade
 + time: Date. Default = Date.now
 + stockName: String. Required
 + stockQuantity: Number. Required
 + stockPriceAtTrade: Number. Required
 + isPurchase: Boolean. Indicates whether trade is purchase or sale
-+ tradeAmount: Number. Required
++ valueOfTrade: Number. Required
 
 ### Game Class
 
