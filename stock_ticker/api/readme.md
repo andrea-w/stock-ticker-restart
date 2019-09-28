@@ -12,6 +12,8 @@
 
 ### Portfolio Class
 
++ portfolioId: Number. Required. Default = 0
++ playerId: Number. Required. Default = 0
 + cash: Number. Required. Default = 0
 + bonds: Number. Required. Default = 0
 + industrials: Number. Required. Default = 0
