@@ -1,13 +1,16 @@
 # Stock Ticker API Readme
 
-## Player Class
+## Schemas
+
+### Player Class
 
 + username: String. Required
 + isBroker: Boolean. Default: false
 + tradeHistory: array of trades
 + portfolio: Portfolio
++ currentGame: reference to Game object
 
-## Portfolio Class
+### Portfolio Class
 
 + cash: Number. Required. Default = 0
 + bonds: Number. Required. Default = 0
@@ -18,10 +21,9 @@
 + grain: Number. Required. Default = 0
 + netWorth: Number. Required. Default = 0. Sum of all previous entries
 
+### Trade Class
 
-## Trade Class
-
-+ username: String. Required
++ username: String. Required. Identifies player involved in trade
 + time: Date. Default = Date.now
 + stockName: String. Required
 + stockQuantity: Number. Required
@@ -29,7 +31,7 @@
 + isPurchase: Boolean. Indicates whether trade is purchase or sale
 + tradeAmount: Number. Required
 
-## Game Class
+### Game Class
 
 + gameName: String. Required
 + startTime: Date. Default = Date.now
@@ -45,3 +47,9 @@
     - silver: Number. Default = 100
     - bonds: Number. Default = 100
     - industrials: Number. Default = 100
+
+## Relations
+
++ 1-to-1 mapping between Player and Portfolio
++ many-to-1 Trades to Player. Trades stored in Player's tradeHistory array
++ many-to-1 Players to Game. Player can be in maximum of 1 Game at a time
