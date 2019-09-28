@@ -37,6 +37,7 @@
 
 ### Game Class
 
++ gameId: Number. Required
 + gameName: String. Required
 + startTime: Date. Default = Date.now
 + endTime: Date.
