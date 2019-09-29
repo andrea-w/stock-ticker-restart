@@ -50,3 +50,5 @@ exports.deletePlayer = function(req, res) {
             res.json({message: err});
         });
 }
+
+module.exports = exports;
